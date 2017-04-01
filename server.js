@@ -3,7 +3,7 @@ var app = require('express')();
 //var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
-  res.render('./public/index.html');
+  res.render(path.join(__dirname+'/index.html'));
   //res.writeHead(200, { 'Content-Type': 'text/plain' });
   //res.end('Hello World\n');
 });
