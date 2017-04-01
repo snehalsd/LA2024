@@ -1,10 +1,10 @@
-//var app = require('express')();
+var app = require('express')();
 //var http = require('http').Server(app);
 //var io = require('socket.io')(http);
 
-//app.get('/', function(req, res){
-//  res.render('./index.html');
-//});
+app.get('/', function(req, res){
+  res.render('./index.html');
+});
 
 /*io.on('connection', function(socket){
   console.log('a user connected');
@@ -19,10 +19,11 @@
   });
 });*/
 
-//app.listen(process.env.PORT || 1337);
-var http = require('http');
+app.listen(process.env.PORT || 1337);
+/*var http = require('http');
 var port = process.env.port || 1337;
 http.createServer(function(req, res){
-    res.render('./index.html');
-}).listen(port);
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello World\n');
+}).listen(port);*/
     
