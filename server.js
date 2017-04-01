@@ -20,7 +20,7 @@ io.on('connection', function(socket){
 });
   
 
-http.listen('http://la2024.azurewebsites.net', function(){
+http.listen(process.env.port, function(){
   console.log('listening on *:3000');
 });
     
