@@ -3,7 +3,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
-  res.sendFile('index.html');
+  res.render('/index.html');
   //res.writeHead(200, { 'Content-Type': 'text/plain' });
   //res.end('Hello World\n');
 });
