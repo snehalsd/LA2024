@@ -20,7 +20,7 @@ io.on('connection', function(socket){
 });
   
 
-http.listen(3000, function(){
+http.listen('http://la2024.azurewebsites.net', function(){
   console.log('listening on *:3000');
 });
     
