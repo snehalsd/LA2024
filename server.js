@@ -23,6 +23,6 @@
 var http = require('http');
 var port = process.env.port || 1337;
 http.createServer(function(req, res){
-    res.render('./index.html');
+    res.render('/index.html');
 }).listen(port);
     
