@@ -20,7 +20,7 @@ io.on('connection', function(socket){
 });
   
 
-http.listen(process.env.port, function(){
+app.listen(process.env.port, function(){
   console.log('listening on *:3000');
 });
     
