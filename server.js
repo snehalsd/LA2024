@@ -1,14 +1,14 @@
 var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+//var http = require('http').Server(app);
+//var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
-  res.render('/index.html');
+  res.render('./public/index.html');
   //res.writeHead(200, { 'Content-Type': 'text/plain' });
   //res.end('Hello World\n');
 });
 
-io.on('connection', function(socket){
+/*io.on('connection', function(socket){
   console.log('a user connected');
      socket.on('chat message', function(msg){
     console.log('message: ' + msg);
@@ -19,7 +19,7 @@ io.on('connection', function(socket){
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
-});
+});*/
 
 app.listen(process.env.PORT || 1337);
     
